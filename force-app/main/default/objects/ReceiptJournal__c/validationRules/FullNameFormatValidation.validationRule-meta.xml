@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FullNameFormatValidation</fullName>
+    <active>true</active>
+    <description>氏名（項目入力値）が全角スペースで区切られていない場合、エラーメッセージを表示する。</description>
+    <errorConditionFormula>IF ( 
+  AND( 
+    NOT( ISBLANK( FullName__c ) ) ,  
+    NOT( CONTAINS( FullName__c , &quot;　&quot;) ) 
+  ) , 
+ True , 
+ False
+ )</errorConditionFormula>
+    <errorMessage>氏名の姓と名が全角スペースで区切られていません。</errorMessage>
+</ValidationRule>

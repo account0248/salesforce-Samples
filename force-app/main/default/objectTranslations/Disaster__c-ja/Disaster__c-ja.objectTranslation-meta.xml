@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>災害</value>
+    </caseValues>
+    <layouts>
+        <layout>災害レイアウト</layout>
+        <sections>
+            <label></label>
+            <section>カスタムリンク</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DisasterCodeFormatValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DisasterCodeUpdateValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

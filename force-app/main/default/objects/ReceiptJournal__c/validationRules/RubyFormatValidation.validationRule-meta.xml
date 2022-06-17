@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RubyFormatValidation</fullName>
+    <active>true</active>
+    <description>ふりがな（項目入力値）が全角スペースで区切られていない場合、エラーメッセージを表示する。</description>
+    <errorConditionFormula>IF ( 
+  AND( 
+    NOT( ISBLANK( Ruby__c ) ) ,  
+    NOT( CONTAINS( Ruby__c , &quot;　&quot;) ) 
+  ) , 
+ True , 
+ False
+ )</errorConditionFormula>
+    <errorMessage>ふりがなの姓と名が全角スペースで区切られていません。</errorMessage>
+</ValidationRule>

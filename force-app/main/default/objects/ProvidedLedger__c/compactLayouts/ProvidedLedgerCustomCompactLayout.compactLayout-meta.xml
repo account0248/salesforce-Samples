@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProvidedLedgerCustomCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>ReceiptJournal__c</fields>
+    <fields>ProvidedDate__c</fields>
+    <fields>ReceiptDate__c</fields>
+    <fields>Disaster__c</fields>
+    <fields>FullName__c</fields>
+    <fields>Ruby__c</fields>
+    <fields>RequestCategory__c</fields>
+    <label>支給台帳コンパクトレイアウト</label>
+</CompactLayout>

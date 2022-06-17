@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceiptJournalCustomCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>StateProgress__c</fields>
+    <fields>Disaster__c</fields>
+    <fields>FullName__c</fields>
+    <fields>Ruby__c</fields>
+    <fields>ReceiptDate__c</fields>
+    <fields>RequestCategory__c</fields>
+    <label>収受簿カスタムコンパクトレイアウト</label>
+</CompactLayout>
