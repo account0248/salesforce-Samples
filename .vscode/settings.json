@@ -1,9 +1,103 @@
 {
+  // プロジェクト初期値
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
     "**/.sfdx": true
   },
+
+  // salesforce設定値
+  "xml.validation.enabled": false,
+  "editor.wordBasedSuggestions": false,
+  "salesforcedx-vscode-apex.java.home": "C:\\Users\\miyaura.yuta\\pleades\\java\\8",
+  "salesforcedx-vscode-apex.advanced.enable-completion-statistics": true,
+    // 補完機能で勝手に一番上選ぶやつ
+    "editor.suggestSelection": "first",
+
+  // vscode自動保存系設定値
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000
+  "files.autoSaveDelay": 1000,
+  // ファイル保存時に各行の末尾にある半角スペースを削除
+  "files.trimTrailingWhitespace": true,
+
+    /* ################################ よく変える設定 ################################
+     */
+    // 単語の区切り文字
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?　、。！？「」【】『』（）",
+    // 1つのタブに相当する半角スペースの数
+    "editor.detectIndentation": true,
+    "editor.tabSize": 4,
+    // 行の折り返し表示
+    "editor.wordWrap": "on",
+    "files.exclude": {
+      // あれば記述する
+    },
+    // アクティブなターミナルセッションがある場合、終了時に確認を行う
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    // ターミナルで選択したテキストをクリップボードにコピー
+    "terminal.integrated.copyOnSelection": true,
+    /* ################################ prettierの設定 ################################
+     */
+    "prettier.tabWidth": 4,
+    /* ################################ 各言語、フォーマッター、ファイル固有の設定 ################################
+     */
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[csv]": {
+    // 行の折り返し表示
+    "editor.wordWrap": "off"
+  },
+  "[log]": {
+    // 行の折り返し表示
+    "editor.wordWrap": "off"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[hrml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+    // Markdown ファイルは自動フォーマットしない
+    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": false,
+      "editor.wordWrap": "on",
+      "editor.renderWhitespace": "all",
+      "editor.acceptSuggestionOnEnter": "off",
+      "files.trimTrailingWhitespace": false
+  },
+    /* ################################ 基本設定 ################################
+     */
+    // ファイルの自動エンコードを実施
+    "files.autoGuessEncoding": true,
+    // ファイル保存時に自動でフォーマット
+    "editor.formatOnSave": true,
+    // 入力した行を自動でフォーマット
+    "editor.formatOnType": true,
+    // ミニマップの最大幅
+    "editor.minimap.maxColumn": 60,
+    // ミニマップのスライダーの表示方法
+    "editor.minimap.showSlider": "always",
+    // ミニマップのサイズ
+    "editor.minimap.size": "fit",
+    // 制御文字を表示
+    "editor.renderControlCharacters": true,
+    // エディター上での空白文字の表示方法
+    "editor.renderWhitespace": "all",
+    // 行の折りたたみ記号の表示方法
+    "editor.showFoldingControls": "always",
+    // 名前重複時の名前付け規則
+    "explorer.incrementalNaming": "smart",
+    // ファイル保存時に行末に改行を挿入
+    "files.insertFinalNewline": true,
+    // ファイル保存時に最終行以降の空行を削除
+    "files.trimFinalNewlines": true,
+    // 検索ビューの検索結果に行数を併記
+    "search.showLineNumbers": true,
+    // エディターのタブのサイズ
+    "workbench.editor.tabSizing": "shrink",
 }
