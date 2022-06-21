@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="支給対象">
+        <div class="slds-form_horizontal" style="padding-left: 4rem; padding-right: 4rem;">
+            <lightning-input label="収受日" value={inputReceiptDate} type="date" required="true" onchange={inputReceiptDateChange}></lightning-input>
+            <lightning-input label="支給日" value={inputPayDate} type="date" required="true" onchange={inputPayDateChange}></lightning-input>
+            <div class="slds-clearfix">
+                <lightning-button class="slds-float_right" label="支給決定" onclick={doDecisionGrant}></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+
+    <!-- 以下Githubコードリンク -->
+    <div class="slds-m-top_small">
+        <lightning-card style="margin-top: 1rem;" title="Githubコードリンク">
+            <div class="slds-m-around_small">
+                <a style="display:block;" target="_blank" href="https://github.com/account0248/salesforce-Samples/blob/main/force-app/main/default/classes/CallLWCDisasterSupport.cls#:~:text=public%20static%20Integer-,decisionGrant,-(Date%20inputReceiptDate">Apex</a>
+                <a style="display:block;" target="_blank" href="https://github.com/account0248/salesforce-Samples/blob/main/force-app/main/default/lwc/disasterSupportDecisionGrant/disasterSupportDecisionGrant.html">LWC：html</a>
+                <a style="display:block;" target="_blank" href="https://github.com/account0248/salesforce-Samples/blob/main/force-app/main/default/lwc/disasterSupportDecisionGrant/disasterSupportDecisionGrant.js">LWC：js</a>
+            </div>
+        </lightning-card>
+    </div>
+</template>
